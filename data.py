@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # CSV 파일 읽기
-file_path = "cox-violent-parsed_filt_usable.csv"
+file_path = "data.csv"
 df = pd.read_csv(file_path)
 
 # 1. 20대 남성 중에서 폭력적인 재범 발생여부(is_violent_recid)가 제일 높은 인종 확인
