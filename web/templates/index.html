@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPAS Data Visualization</title>
+    <title>Data Visualization</title>
 </head>
 <body>
-    <h1>COMPAS Data Visualization</h1>
-    <!-- Include your visualizations or data here -->
-    <!-- Example: -->
-    <div>
-        <h2>Data Summary</h2>
-        <p>{{ data.summary() }}</p>
-    </div>
+    <h1>Data Visualization</h1>
+    
+    <!-- 첫 번째 그래프: 20대 남성 중에서 폭력적인 재범 발생여부가 제일 높은 인종 -->
+    <h2>Probability of violent recidivism (male in his 20s)</h2>
+    <img src="data:image/png;base64,{{ plot1_url }}" alt="Plot 1">
+
+    <!-- 두 번째 그래프: 아시아 여성 중에서 일반적 재범 발생여부가 제일 높은 나이대 -->
+    <h2>Typical probability of recidivism (Asian women)</h2>
+    <img src="data:image/png;base64,{{ plot2_url }}" alt="Plot 2">
 </body>
 </html>
-
